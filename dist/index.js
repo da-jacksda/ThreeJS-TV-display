@@ -1,6 +1,6 @@
-import * as THREE from 'three';
-import { OrbitControls } from '../node_modules/three/examples/jsm/Addons.js';
-import { GLTFLoader } from '../node_modules/three/addons/loaders/GLTFLoader.js';
+import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
+import { OrbitControls } from 'https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js'
+import { GLTFLoader } from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/GLTFLoader.js';
 
 class PickHelper {
 	constructor() {
@@ -31,42 +31,42 @@ class PickHelper {
 
 const correctCombinations = ['1111', '2121', '2312', '1123', '3312', '1133'];
 const videoURL = [
-	{url: "/spaceoddity.mp4",             name: "David Bowie – Space Oddity (Official Video)", 
+	{url: "./spaceoddity.mp4",             name: "David Bowie – Space Oddity (Official Video)", 
 		link: "https://www.youtube.com/watch?v=iYYRH4apXDo&pp=ygUMc3BhY2Ugb2RkaXR5"},
-	{url: "/jerma985.mp4",                name: "jerma985 corecore" ,
+	{url: "./jerma985.mp4",                name: "jerma985 corecore" ,
 		link: "https://www.youtube.com/watch?v=Qq9INFtrYS4"},
-	{url: "/mbvonlyshallow.mp4",          name: "My Bloody Valentine - Only Shallow (Official Music Video)", 
+	{url: "./mbvonlyshallow.mp4",          name: "My Bloody Valentine - Only Shallow (Official Music Video)", 
 		link: "https://www.youtube.com/watch?v=FyYMzEplnfU"},
-	{url: "/housekaraoke.mp4",            name: "House, Chase, Foreman at karaoke bar singing Midnight Train to Georgia[HQ]" , 
+	{url: "./housekaraoke.mp4",            name: "House, Chase, Foreman at karaoke bar singing Midnight Train to Georgia[HQ]" , 
 		link: "https://www.youtube.com/watch?v=BVGGG2J0_7M"},
-	{url: "/atbulaivaikstantisvyras.mp4", name: "Šilutės gyventojus gąsdino atbulai vaikštantis vyras", 
+	{url: "./atbulaivaikstantisvyras.mp4", name: "Šilutės gyventojus gąsdino atbulai vaikštantis vyras", 
 		link: "https://www.youtube.com/watch?v=04y5UY8y09M"},
-	{url: "/27.mp4",                      name: "27", 
+	{url: "./27.mp4",                      name: "27", 
 		link: "https://www.youtube.com/watch?v=dLRLYPiaAoA&pp=ygUKMjcgZXh1cmJpYQ%3D%3D"},
-	{url: "/communityclip.mp4",           name: "Community La Biblioteca Spanish Rap HD", 
+	{url: "./communityclip.mp4",           name: "Community La Biblioteca Spanish Rap HD", 
 		link: "https://www.youtube.com/watch?v=j25tkxg5Vws&pp=ygUYZG9uZGUgZXN0YSBsYSBiaWJsaW90ZWNh"},
-	{url: "/proteinshake.mp4",            name: "protein shake", 
+	{url: "./proteinshake.mp4",            name: "protein shake", 
 		link: "https://www.youtube.com/watch?v=Gh9Dv5D5aCM&t=5s&pp=ygUNcHJvdGVpbiBzaGFrZQ%3D%3D"},
-	{url: "/itschoademydear.mp4",         name: "Connan Mockasin - It's Choade My Dear (2010) [Music Video]", 
+	{url: "./itschoademydear.mp4",         name: "Connan Mockasin - It's Choade My Dear (2010) [Music Video]", 
 		link: "https://www.youtube.com/watch?v=HkNwuY2JUHQ"},
-	{url: "/garbageguardians.mp4",        name: "TF2: Garbage Guardians", 
+	{url: "./garbageguardians.mp4",        name: "TF2: Garbage Guardians", 
 		link: "https://www.youtube.com/watch?v=oAmk9Qq8-XQ&t=183s"},
-	{url: "/itsallsoupnow.mp4",           name: "King Krule - it’s all Soup now", 
+	{url: "./itsallsoupnow.mp4",           name: "King Krule - it’s all Soup now", 
 		link: "https://www.youtube.com/watch?v=RK77B-oE378"},
-	{url: "/makeitinstantlygroove.mp4",   name: "make it instantly groove", 
+	{url: "./makeitinstantlygroove.mp4",   name: "make it instantly groove", 
 		link: "https://www.youtube.com/watch?v=DXiBB7FvLvg&pp=ygUhc3ludGhuZXQgbWFrZSBpdCBpbnN0YW50bHkgZ3Jvb3Zl"},
 ];
 
 const secretURL = [
-	{url:"/meetthespy.mp4", name:"Meet the Spy", link: "https://www.youtube.com/watch?v=OR4N5OhcY9s"},
-	{url:"/heavyisdead.mp4", name:"Heavy is Dead", link: "https://www.youtube.com/watch?v=oiuyhxp4w9I&rco=1"},
-	{url:"/joshhutcherson.mp4", name: " Josh Hutcherson || Whistle", link: "https://www.youtube.com/watch?v=BbeeuzU5Qc8"},
-	{url:"/threatlevelmidnight.mp4", name: "Threat Level Midnight - Full Movie (EXCLUSIVE) - The Office US", link: "https://youtu.be/7iPyz6Yqwl4?si=36-lIWPZ9PQki5gA"},
-	{url:"/ninjaturtles.mp4", name: "Banned German Ninja Turtles Commercial", link: "https://youtu.be/jC3pGcRHeQ0?si=HTxSKrZ6aABotfbj"},
-	{url:"/everyhousemd.mp4", name: "Every episode of House M.D (original Audio)", link: "https://www.youtube.com/watch?v=ry-Z6_yfZoE"},
+	{url:"./meetthespy.mp4", name:"Meet the Spy", link: "https://www.youtube.com/watch?v=OR4N5OhcY9s"},
+	{url:"./heavyisdead.mp4", name:"Heavy is Dead", link: "https://www.youtube.com/watch?v=oiuyhxp4w9I&rco=1"},
+	{url:"./joshhutcherson.mp4", name: " Josh Hutcherson || Whistle", link: "https://www.youtube.com/watch?v=BbeeuzU5Qc8"},
+	{url:"./threatlevelmidnight.mp4", name: "Threat Level Midnight - Full Movie (EXCLUSIVE) - The Office US", link: "https://youtu.be/7iPyz6Yqwl4?si=36-lIWPZ9PQki5gA"},
+	{url:"./ninjaturtles.mp4", name: "Banned German Ninja Turtles Commercial", link: "https://youtu.be/jC3pGcRHeQ0?si=HTxSKrZ6aABotfbj"},
+	{url:"./everyhousemd.mp4", name: "Every episode of House M.D (original Audio)", link: "https://www.youtube.com/watch?v=ry-Z6_yfZoE"},
 ];
-const TVStatic = '/tvstatic.mp4';
-const darkScreen = '/darkscreen.mp4';
+const TVStatic = './tvstatic.mp4';
+const darkScreen = './darkscreen.mp4';
 let lastPlayedVideo = videoURL[0];
 const textDisplay = document.getElementById('link');
 textDisplay.textContent = 'Nothing!';
@@ -213,7 +213,7 @@ function setupPointLight(pos) {
 
 function loadTV() {
 	const gltfLoader = new GLTFLoader();
-	gltfLoader.load( '/tv.gltf', ( gltf ) => {
+	gltfLoader.load( './tv.gltf', ( gltf ) => {
 
 		const root = gltf.scene;
 		root.rotation.y = Math.PI;
