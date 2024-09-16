@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import { OrbitControls } from '/three/examples/jsm/Addons.js';
-import { GLTFLoader } from '/three/addons/loaders/GLTFLoader.js';
+import { OrbitControls } from '../node_modules/three/examples/jsm/Addons.js';
+import { GLTFLoader } from '../node_modules/three/addons/loaders/GLTFLoader.js';
 
 class PickHelper {
 	constructor() {
