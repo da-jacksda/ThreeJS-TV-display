@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "gh-pages": "^6.1.1",
+    "three": "^0.167.1",
+    "vite-plugin-top-level-await": "^1.4.4"
+  },
+  "devDependencies": {
+    "vite": "^5.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  }
+}
