@@ -26,16 +26,16 @@
 <script type="importmap">
     {
       "imports": {
-        "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
-        "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+        "three": "https://unpkg.com/three@0.168.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.168.0/examples/jsm/"
       }
     }
 </script>
 
 <script type="module">
-import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
-import { OrbitControls } from 'https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js'
-import { GLTFLoader } from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/GLTFLoader.js';
+import * as THREE from 'https://unpkg.com/three@0.168.0/build/three.module.js';
+import { OrbitControls } from 'https://unpkg.com/three@0.168.0/examples/jsm/controls/OrbitControls.js'
+import { GLTFLoader } from 'https://unpkg.com/three@0.168.0/examples/jsm/loaders/GLTFLoader.js';
 
 class PickHelper {
 	constructor() {
@@ -140,9 +140,6 @@ const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x000000);
 
 const video = document.querySelector('#video');
-video.onloadeddata = function() {
-	video.play();
-};
 const pickPosition = {x: 0, y: 0};
 clearPickPosition();
 
